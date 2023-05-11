@@ -1,0 +1,11 @@
+sort1 uses: bubble sortcheck50 cs50/labs/2023/x/sort
+
+How do you know?: In reversed10000.txt file was the slowest
+
+sort2 uses: merge sort
+
+How do you know?: In reversed10000.txt file was the fastest
+
+sort3 uses: selection sort
+
+How do you know?: Better performance in comparison to bubble sort in reversed10000.txt
