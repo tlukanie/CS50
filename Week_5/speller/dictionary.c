@@ -10,9 +10,6 @@
 
 #include "dictionary.h"
 
-// Default dictionary
-#define DICTIONARY_S "dictionaries/small"
-
 
 // Represents a node in a hash table
 typedef struct node
