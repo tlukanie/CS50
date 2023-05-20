@@ -60,7 +60,6 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     //sums up ascii value
-    int word_length = strlen(word);
     long ascii_value = 0;
     while (*word)
     {
