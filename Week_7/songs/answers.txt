@@ -1,0 +1,2 @@
+I would describe the aura of the whole provided songs.db as the yellowe one, cause the average energy level is 0.659. Only 5 songs showed up with energy, valence and danceability more than 0.75, that I would define as an orage aura.
+I think, when definig the aura color it's also better to take into consideration the context of the song lyrics and understandig of colors regarding cultural differences amonf different countries.
