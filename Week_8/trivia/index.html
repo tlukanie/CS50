@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+
+            function changeColor1(event)
+            {
+                //var triggerObject = event.srcElement;
+                document.getElementById('btn1').style.backgroundColor = '#90EE90';
+                const node = document.createElement("p");
+                const textnode = document.createTextNode("Correct!");
+                node.appendChild(textnode);
+                document.getElementById("part1").appendChild(node);
+            }
+
+            function changeColor2(event)
+            {
+                document.getElementById('btn2').style.backgroundColor = '#FFCCCB';
+                const node = document.createElement("p");
+                const textnode = document.createTextNode("Incorrect!");
+                node.appendChild(textnode);
+                document.getElementById("part1").appendChild(node);
+            }
+
+            function changeColor3(event)
+            {
+                document.getElementById('btn3').style.backgroundColor = '#FFCCCB';
+                const node = document.createElement("p");
+                const textnode = document.createTextNode("Incorrect!");
+                node.appendChild(textnode);
+                document.getElementById("part1").appendChild(node);
+            }
+
+
+            function checkValid()
+            {
+                let input = document.querySelector('input');
+                if (input.value === "Ukraine")
+                {
+                    input.style.backgroundColor = '#90EE90';
+                    //document.querySelector('#check').style.backgroundColor = '#90EE90';
+                    document.querySelector('#result2').innerHTML = 'Correct!';
+                }
+                else
+                {
+                    input.style.backgroundColor = '#FFCCCB';
+                    document.querySelector('#result2').innerHTML = 'Incorrect!';
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section" id="part1">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>When was bread invented?</h3>
+                <button onclick="changeColor1(event);" id="btn1">8000 BC</button>
+                <button onclick="changeColor2(event);" id="btn2">10000 BC</button>
+                <button onclick="changeColor3(event);" id="btn3">6000 BC</button>
+
+            </div>
+
+            <div class="section" id="part2">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Which country is known as the 'breadbasket of Europe' and is amongst the top three exporters of grain in the world?</h3>
+                <div name="myForm">
+                    <input name="answer" type="text" id="check" />
+                    <button onclick="checkValid();">Check Answer</button>
+                </div>
+                <p id="result2"></p>
+            </div>
+        </div>
+    </body>
+</html>
