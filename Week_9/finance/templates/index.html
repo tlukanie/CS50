@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <p>
+        Home page
+    </p>
+    <p>
+        A share of {{stock}} ({{stock}}) costs {{price}}.
+    </p>
+    <p>
+        Current balance {{cash}}
+    </p>
+    <main class="main-page">
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody> </tbody>
+            <tfoot>
+                <tr>
+                    <td>Cash</td>
+                    <td>{{cash}}</td>
+                </tr>
+                <tr>
+                    <td>TOTAL</td>
+                    <td>{{cash}}</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+{% endblock %}
